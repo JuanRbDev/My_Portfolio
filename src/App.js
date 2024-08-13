@@ -10,12 +10,12 @@ function App() {
 
       <Header />
 
-      <Routes>
+      <Routes basename="My_Portfolio">
         <Route path="/" element={<HomePage />} />
       </Routes>
 
       <Footer />
-      
+
     </>
   );
 }
