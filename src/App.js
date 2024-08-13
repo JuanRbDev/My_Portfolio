@@ -10,7 +10,7 @@ function App() {
 
       <Header />
 
-      <Routes basename="My_Portfolio">
+      <Routes basename="/My_Portfolio">
         <Route path="/" element={<HomePage />} />
       </Routes>
 
