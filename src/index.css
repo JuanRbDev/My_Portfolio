@@ -1,6 +1,164 @@
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
+/* Header.css */
+
+.header {
+  background: #141414;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.nav-menu {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+
+  /* Espacio interno *//* Header.css */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #444;
+}
+
+.nav-menu {
+  max-width: 1200px; /* Ajusta el máximo ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Espacio interno */
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ddd; /* Color de texto al pasar el ratón */
+}
+
+.menu-toggle {
+  display: none; /* Oculta el botón de menú en pantallas grandes */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      display: none; /* Oculta los enlaces en pantallas pequeñas */
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-menu.active .nav-links {
+      display: flex; /* Muestra los enlaces cuando el menú está activo */
+  }
+
+  .menu-toggle {
+      display: block; /* Muestra el botón de menú en pantallas pequeñas */
+  }
+}
+
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  /* Espacio entre los elementos */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+  /* Color de texto al pasar el ratón */
+}
+
+.menu-toggle {
+  display: none;
+  /* Oculta el botón de menú en pantallas grandes */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    /* Oculta los enlaces en pantallas pequeñas */
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu.active .nav-links {
+    display: flex;
+    /* Muestra los enlaces cuando el menú está activo */
+  }
+
+  .menu-toggle {
+    display: block;
+    /* Muestra el botón de menú en pantallas pequeñas */
+  }
+}

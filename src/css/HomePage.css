@@ -1,4 +1,90 @@
-img {
+/* Estilos generales del contenedor */
+.container {
     width: 100%;
-    height: auto;
+    height: 100vh;
+    background: #141414;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Añade padding para que el contenido no toque los bordes */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+/* Estilos del box_text */
+.box_text {
+    width: 100%;
+    max-width: 800px; /* Máximo ancho */
+    min-width: 300px; /* Aumento del min-width para mejor responsividad */
+    margin: 0 auto;
+    height: auto; /* Ajuste de altura automática para contenido flexible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    
+}
+
+/* Estilo para los encabezados */
+.container h1,
+h2,
+h3 {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+.box_text h1 {
+    font-size: 6vw; /* Usa unidades relativas para un tamaño de fuente flexible */
+    background-image: linear-gradient(90deg, #00eeff, #1100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px; /* Espacio inferior entre los elementos */
+}
+
+#profesion {
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.box_text h2 {
+    font-size: 4vw; /* Usa unidades relativas para un tamaño de fuente flexible */
+    color: rgb(161, 161, 161);
+    text-align: center; /* Centra el texto */
+    margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+.box_text h3 {
+    color: #fff;
+    font-size: 2.5vw; /* Usa unidades relativas para un tamaño de fuente flexible */
+    margin-bottom: 10px; /* Espacio inferior entre los elementos */
+}
+
+.box_text button {
+    transition: 0.5s;
+    margin-top: 20px;
+    font-size: 1.5rem; /* Tamaño de fuente relativo para mejor escalabilidad */
+    color: #fff;
+    width: 80%; /* Ancho en porcentaje para mejor adaptabilidad */
+    max-width: 300px; /* Ancho máximo para no extenderse demasiado */
+    height: 60px; /* Ajuste de altura */
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3); /* Sombra más suave */
+    background: linear-gradient(90deg, #1100ff, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el texto del botón */
+    border: none; /* Elimina el borde por defecto */
+}
+
+.box_text button:hover {
+    cursor: pointer;
+    width: 85%; /* Aumento en tamaño en hover */
 }
